@@ -1,18 +1,14 @@
-import LeftMain from "./LeftMain";
-import RightMain from "./RightMain";
-const Main = () => {
+import LeftSide from "./LeftSide";
+import RightSide from "./RightSide";
+
+export default function Main() {
   return (
     <>
-      <div className="row m-5">
-        <div className="col-4">
-          <LeftMain />
-        </div>
-        <div className="col-7">
-          <RightMain />
+      <div className="row">
+        <div className="col-12">
+          <LeftSide />
         </div>
       </div>
     </>
   );
-};
-
-export default Main;
+}

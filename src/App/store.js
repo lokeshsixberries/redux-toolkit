@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "../Slices/LoginSlice.js";
+import ApiReducer from "../Slice/ApiSlice";
 export const store = configureStore({
   reducer: {
-    userReducer: userReducer,
+    userReducer: ApiReducer,
   },
 });
